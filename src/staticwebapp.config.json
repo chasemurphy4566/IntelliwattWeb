@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/*",
-      "rewrite": "/.auth/login/aad"
+      "redirect": "https://wonderful-sky-0caad6f10.5.azurestaticapps.net/Analytics.html",
       "allowedRoles": ["authenticated"]
     }
   ],
