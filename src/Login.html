@@ -7,17 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intelliwatt</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-  <script type="text/javascript">
-      function signIn() {
-          const clientId = 'cf961752-73ff-4041-be26-91cae1fa8f6a'; // Replace with your client ID obtained from Azure portal
-          const redirectUri = '/LivevsHistoric.html'; // Replace with your redirect URI configured in Azure portal
-          const scope = 'openid profile email';
-          const responseType = 'token';
 
-          const authUrl = `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=${clientId}&response_type=${responseType}&redirect_uri=${redirectUri}&scope=${scope}`;
-          window.location.href = authUrl;
-      }
-  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -276,59 +266,3 @@
 </div>
 </login>
 
-<script>
-  document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-    // Perform authentication using provided username and password
-    authenticateUser(username, password);
-  });
-
-  function authenticateUser(username, password) {
-    // Example: Authenticate user using an API endpoint
-    // Replace this with your actual authentication logic
-
-    // Assuming you have an endpoint to handle authentication
-    // This is where you would integrate Power BI authentication
-
-    // Example:
-    fetch("/authenticate", {
-      method: "POST",
-      body: JSON.stringify({ username: username, password: password }),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      // If authentication is successful, embed the Power BI report
-      if (data.success) {
-        embedPowerBIReport(data.accessToken);
-      } else {
-        alert("Authentication failed. Please try again.");
-      }
-    })
-    .catch(error => {
-      console.error("Error:", error);
-    });
-  }
-
-  function embedPowerBIReport(accessToken) {
-    // Example: Embed Power BI report using Power BI JavaScript API
-    // Replace this with your actual embedding logic
-
-    // Example:
-    var embedConfig = {
-      type: 'report',
-      id: 'report-id',
-      accessToken: accessToken,
-      embedUrl: 'https://app.powerbi.com/reportEmbed?reportId=report-id'
-    };
-
-    var reportContainer = document.getElementById('reportContainer');
-    powerbi.embed(reportContainer, embedConfig);
-  }
-</script>
