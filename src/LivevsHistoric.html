@@ -7,17 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intelliwatt</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-  <script type="text/javascript">
-      function signIn() {
-          const clientId = 'cf961752-73ff-4041-be26-91cae1fa8f6a'; // Replace with your client ID obtained from Azure portal
-          const redirectUri = 'https://intelliwat.z9.web.core.windows.net/Analytics.html'; // Replace with your redirect URI configured in Azure portal
-          const scope = 'openid profile email';
-          const responseType = 'token';
-
-          const authUrl = `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=${clientId}&response_type=${responseType}&redirect_uri=${redirectUri}&scope=${scope}`;
-          window.location.href = authUrl;
-      }
-  </script>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -272,5 +262,10 @@
 <login>
   <div class="login-container">
     <h2>Microsoft Login</h2>
-    <button onclick="signIn()">Sign in with Microsoft</button>
+    <button onclick="">Sign in with Microsoft</button>
 </div>
+  <div class="login-container">
+    <h2>Microsoft Login</h2>
+    <button onclick="">Sign in with Microsoft</button>
+</div>
+</login>
