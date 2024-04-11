@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/Login.html",
+      "route": "/*",
       "allowedRoles": ["authenticated"]
     }
   ],
