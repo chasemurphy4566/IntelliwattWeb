@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/src/Analytics.html",
+      "route": "/src/Login.html",
       "allowedRoles": ["authenticated"]
     }
   ],
