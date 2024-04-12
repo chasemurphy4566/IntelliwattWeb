@@ -3,7 +3,7 @@
     {
       "route": "/Analytics/*.html",
       "allowedRoles": ["authenticated"],
-      "redirect": "/LiveAnalytics.html"
+      "redirect": "/Analytics/LiveAnalytics.html"
     }
   ],
   "navigationFallback": {
