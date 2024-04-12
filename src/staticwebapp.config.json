@@ -4,6 +4,7 @@
       "route": "/Analytics/*.html",
       "allowedRoles": ["authenticated"],
       "redirect": "/Analytics/LiveAnalytics.html"
+      "redirect": "/Analytics/Analytics.html"
     }
   ],
   "navigationFallback": {
