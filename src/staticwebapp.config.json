@@ -1,14 +1,9 @@
 {
   "routes": [
     {
-      "route": "/LiveAnalytics.html",
+      "route": "/Analytics/*.html",
       "allowedRoles": ["authenticated"],
       "redirect": "/LiveAnalytics.html"
-    }
-    {
-      "route": "/Analytics.html",
-      "allowedRoles": ["authenticated"],
-      "redirect": "/Analytics.html"
     }
   ],
   "navigationFallback": {
