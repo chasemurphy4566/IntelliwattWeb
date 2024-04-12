@@ -257,8 +257,30 @@
     </nav>
   </header>
 </body>
+<body>
+    <a href="#" id="loginLink">Login</a>
 
+    <script>
+        // Function to handle click on login link
+        document.getElementById('loginLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default action of following the link
 
+            // Perform authentication using AAD
+            fetch('/.auth/login/aad')
+                .then(response => {
+                    if (response.status === 302) {
+                        // Redirect to the authentication provider
+                        window.location.href = response.url;
+                    } else {
+                        console.error('Authentication failed:', response);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error during authentication:', error);
+                });
+        });
+    </script>
+</body>
 <login>
   <div class="login-container">
     <h2>Historical Dashboard</h2>
