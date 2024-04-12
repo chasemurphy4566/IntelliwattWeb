@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "route": "/src/login.html",
+      "route": "/src/LivevsHistoric.html",
       "allowedRoles": ["authenticated"],
       "redirect": "/src/LivevsHistoric.html"
     }
