@@ -3,7 +3,7 @@
     {
       "route": "/*",
       "allowedRoles": ["authenticated"],
-      "redirect": "https://wonderful-sky-0caad6f10.5.azurestaticapps.net/src/LivevsHistoric.html"
+      "redirect": "https://wonderful-sky-0caad6f10.5.azurestaticapps.net/LivevsHistoric.html"
     }
   ],
   "navigationFallback": {
