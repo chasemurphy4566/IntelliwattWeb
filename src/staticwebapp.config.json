@@ -3,7 +3,7 @@
     {
       "route": "/Analytics/*",
       "allowedRoles": ["authenticated"],
-      "redirect": "/Analytics/LivevsHistoric.html"
+      "redirect": "/Analytics/Dashboard/Analytics.html"
     }
   ],
   "navigationFallback": {
