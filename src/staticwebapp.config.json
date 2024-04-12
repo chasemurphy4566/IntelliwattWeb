@@ -2,8 +2,8 @@
   "routes": [
     {
       "route": "/src/login.html",
-      "redirect": "/.auth/login/aad",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated"],
+      "redirect": "/src/LivevsHistoric.html"
     }
   ],
   "navigationFallback": {
