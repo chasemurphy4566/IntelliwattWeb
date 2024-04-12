@@ -257,37 +257,14 @@
     </nav>
   </header>
 </body>
-<body>
-    <a href="#" id="loginLink">Login</a>
 
-    <script>
-        // Function to handle click on login link
-        document.getElementById('loginLink').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default action of following the link
-
-            // Perform authentication using AAD
-            fetch('https://wonderful-sky-0caad6f10.5.azurestaticapps.net/.auth/login/aad/callback')
-                .then(response => {
-                    if (response.status === 302) {
-                        // Redirect to the authentication provider
-                        window.location.href = response.url;
-                    } else {
-                        console.error('Authentication failed:', response);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error during authentication:', error);
-                });
-        });
-    </script>
-</body>
 <login>
   <div class="login-container">
     <h2>Historical Dashboard</h2>
-    <button href="/Analytics.html">Go to Dashboard</button>
+    <button href="/Analytics.html">Go to Historical Dashboard</button>
 </div>
   <div class="login-container">
     <h2>Live Dashboard</h2>
-    <button href="">Sign in with Microsoft</button>
+    <button href="/LiveAnalytics.html">Go Live to Dashboard</button>
 </div>
 </login>
