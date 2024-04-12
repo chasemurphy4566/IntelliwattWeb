@@ -9,7 +9,7 @@
       "route": "/Analytics.html",
       "allowedRoles": ["authenticated"],
       "redirect": "/Analytics.html"
-    {
+    }
   ],
   "navigationFallback": {
       "rewrite": "/index.html"
