@@ -2,10 +2,14 @@
   "routes": [
     {
       "route": "/LiveAnalytics.html",
+      "allowedRoles": ["authenticated"],
+      "redirect": "/LiveAnalytics.html"
+    }
+    {
       "route": "/Analytics.html",
       "allowedRoles": ["authenticated"],
-      "redirect": "/LivevsHistoric.html"
-    }
+      "redirect": "/Analytics.html"
+    {
   ],
   "navigationFallback": {
       "rewrite": "/index.html"
