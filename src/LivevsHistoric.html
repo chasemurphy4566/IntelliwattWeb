@@ -266,7 +266,7 @@
             event.preventDefault(); // Prevent default action of following the link
 
             // Perform authentication using AAD
-            fetch('/.auth/login/aad')
+            fetch('https://wonderful-sky-0caad6f10.5.azurestaticapps.net/.auth/login/aad/callback')
                 .then(response => {
                     if (response.status === 302) {
                         // Redirect to the authentication provider
