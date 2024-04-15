@@ -6,7 +6,7 @@
     }
   ],
   "navigationFallback": {
-      "rewrite": "/index.html"
+      "rewrite": "Dashboards/LivevsHistoric.html"
   },
   "responseOverrides": {
     "401": {
