@@ -1,6 +1,7 @@
 {
   "routes": [
     {
+      "route": "/Login/*",
       "route": "/Analytics/Dashboards/*",
       "allowedRoles": ["authenticated"],
     }
